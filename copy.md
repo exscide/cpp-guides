@@ -36,7 +36,6 @@ Wir können unter anderem Pointer verwenden um dieses Problem zu umgehen.
 ```c++
 void set_to_0(int* a, int* b) //──┐
 { //                              │
-  //                              │
     *a = 0;//                     │
     *b = 0;//                     │
 }          //                     │ Unterschiedliche Variablen,

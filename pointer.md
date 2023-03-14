@@ -46,8 +46,8 @@ if (!test)
 Um einem Pointer eine Adresse zuweisen zu können, brauchen wir in erster Linie eine Adresse. Diese können wir durch den `&` Operator erlangen.
 
 ```c++
-int x = 12;
-int* pointer_auf_x = &x;
+int x = 12; // <─────────────┐ pointer_auf_x zeigt auf die Adresse von x
+int* pointer_auf_x = &x; // ─┘
 ```
 
 Man kann `&x` wie *Adresse von `x`* lesen.
@@ -57,8 +57,8 @@ Man kann `&x` wie *Adresse von `x`* lesen.
 Um auf den Wert zuzugreifen, der bei der Adresse liegt, die wir in `pointer_auf_x` gespeichert haben, können wir “dereferenzieren” mit den `*` Operator.
 
 ```c++
-int x = 12;
-int* pointer_auf_x = &x;
+int x = 12; // <─────────────┐ pointer_auf_x zeigt auf die Adresse 
+int* pointer_auf_x = &x; // ─┘
 
 std::cout << *pointer_auf_x << std::endl;
 // Output: 12
@@ -69,8 +69,8 @@ std::cout << *pointer_auf_x << std::endl;
 Genau mit der selben Syntax können wir auch schreiben.
 
 ```c++
-// ...
-int* pointer_auf_x = &x;
+int x = 12; // <─────────────┐ pointer_auf_x zeigt auf die Adresse 
+int* pointer_auf_x = &x; // ─┘
 
 *pointer_auf_x = 14; // Wert bei `pointer_auf_x` gleich 14
 
