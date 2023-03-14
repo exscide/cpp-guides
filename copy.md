@@ -4,15 +4,15 @@ Grundsätzlich werden beim aufrufen von Funktionen alle werte immer kopiert.
 
 ```c++
 void set_to_0(int a, int b) //──┐
-{ //                            │
+{                           //  │
   // funktioniert nicht         │
-    a = 0; //                   │
-    b = 0; //                   │
-}          //                   │ Sind unterschiedliche Variablen
-           //                   │
-           //                   │
+    a = 0;                  //  │
+    b = 0;                  //  │
+}                           //  │ Sind unterschiedliche Variablen
+                            //  │
+                            //  │
 // ...                          │
-           //                   │
+                            //  │
 int a = 10;//───────────────────┤
 int b = 10;//───────────────────┘
 
@@ -42,7 +42,7 @@ void set_to_0(int* a, int* b) //──┐
            //                     │ zeigen auf die unteren
            //                     │
 // ...                            │
-           //                     │
+                              //  │
 int a = 10;//<────────────────────┤
 int b = 10;//<────────────────────┘
 
