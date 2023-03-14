@@ -6,8 +6,8 @@ Grundsätzlich werden beim aufrufen von Funktionen alle werte immer kopiert.
 void set_to_0(int a, int b) //──┐
 { //                            │
   // funktioniert nicht         │
-	a = 0; //                   │
-	b = 0; //                   │
+    a = 0; //                   │
+    b = 0; //                   │
 }          //                   │ Sind unterschiedliche Variablen
            //                   │
            //                   │
@@ -37,8 +37,8 @@ Wir können unter anderem Pointer verwenden um dieses Problem zu umgehen.
 void set_to_0(int* a, int* b) //──┐
 { //                              │
   //                              │
-	*a = 0;//                     │
-	*b = 0;//                     │
+    *a = 0;//                     │
+    *b = 0;//                     │
 }          //                     │ Unterschiedliche Variablen,
            //                     │ zeigen auf die unteren
            //                     │
