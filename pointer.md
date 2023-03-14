@@ -1,7 +1,7 @@
 # Pointer
 
 Ein Pointer ist ein Wert welcher auf einen anderen Wert zeigt.
-Eine Variable vom Datentyp *Pointer auf `X`* beinhaltet eine Adresse an dessen Ort ein Wert mit dem Datentyp `X` liegen soll.
+Eine Variable vom Datentyp ***Pointer auf `X`*** beinhaltet eine Adresse an dessen Ort ein Wert mit dem Datentyp `X` liegen soll.
 
 > Dass dort wirklich ein Wert vom Datentyp `X` liegt ist nicht immer garantiert, dafür ist der Programmierer selbst verantwortlich.
 
@@ -50,21 +50,21 @@ int x = 12; // <─────────────┐ pointer_auf_x zeigt a
 int* pointer_auf_x = &x; // ─┘
 ```
 
-Man kann `&x` wie *Adresse von `x`* lesen.
+Man kann `&x` wie ***Adresse von `x`*** lesen.
 
 ## Auf den Wert zugreifen
 
-Um auf den Wert zuzugreifen, der bei der Adresse liegt, die wir in `pointer_auf_x` gespeichert haben, können wir “dereferenzieren” mit den `*` Operator.
+Um auf den Wert zuzugreifen, der bei jener Adresse liegt, die wir in `pointer_auf_x` gespeichert haben, können wir “dereferenzieren” mit den `*` Operator.
 
 ```c++
-int x = 12; // <─────────────┐ pointer_auf_x zeigt auf die Adresse 
+int x = 12; // <─────────────┐ pointer_auf_x zeigt auf Adresse von x
 int* pointer_auf_x = &x; // ─┘
 
 std::cout << *pointer_auf_x << std::endl;
 // Output: 12
 ```
 
-`*pointer_auf_x` ist wie *Wert bei `pointer_auf_x`* zu lesen.
+`*pointer_auf_x` ist wie ***Wert bei `pointer_auf_x`*** zu lesen.
 
 Genau mit der selben Syntax können wir auch schreiben.
 
