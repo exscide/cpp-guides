@@ -14,7 +14,7 @@ X* test;
 `test` zeigt auf garbage, deswegen sollten wir sie initialisieren.
 
 
-## Das keyword `nullptr` (seit C++11)
+## Das keyword `nullptr`
 
 Der de facto standard Weg einen Pointer auf nichts zeigen zu lassen, ist ihn auf `nullptr` zu setzen.
 
